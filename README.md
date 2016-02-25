@@ -3,9 +3,9 @@ can:
 
 - Compile development packages which have been checked out in
   development mode by using `:make`
-- Have instant feedback on compilation 
-- Define new development packages (by default it defines AliRoot, AliPhysics
-  and O2) 
+- Have instant feedback on compilation (requires [Syntastic](https://github.com/scrooloose/syntastic))
+- Define new development packages (by default it defines AliRoot, AliPhysics, ROOT, FairRoot
+  and O2).
 
 # How to install
 
