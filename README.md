@@ -25,7 +25,7 @@ you can however tweak a few things:
 
 - Where to find homebrew installed software (Mac only)
 
-    let g:homebrew_prefix="/opt/boxen/homebrew"
+    let g:homebrew_prefix="/urs/local"
 
 # Dependencies
 
