@@ -21,11 +21,11 @@ you can however tweak a few things:
 
 - Where to locate the software installed by aliBuild
 
-    let g:alibuild_prefix = "~/alice/sw"
+        let g:alibuild_prefix = "~/alice/sw"
 
 - Where to find homebrew installed software (Mac only)
 
-    let g:homebrew_prefix="/urs/local"
+        let g:homebrew_prefix="/urs/local"
 
 # Dependencies
 
