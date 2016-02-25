@@ -27,6 +27,18 @@ you can however tweak a few things:
 
         let g:homebrew_prefix="/urs/local"
 
+# Define your own projects
+
+You can use the `AliBuildProject()` function to define your own projects and have them enabled when opening a file associated to it. E.g.:
+
+```
+au BufNewFile,BufRead */mesos-workqueue/* call AliBuildProject({
+\ "project-name": "mesos-workqueue",
+\ "sources": ["mesos-workqueue"],
+\ "externals": ['mesos', 'protobuf', 'boost', 'glog']
+\})
+```
+
 # Dependencies
 
 This plugin works better together with
