@@ -21,6 +21,7 @@ function! AliBuildProject(cfg)
   if !exists("g:alibuild_prefix")
     let g:alibuild_prefix = g:alibuild_workdir."/sw"
   endif
+  let $WORK_DIR = g:alibuild_prefix
 
   if !exists("a:cfg.sources")
     let a:cfg.sources = []
@@ -38,7 +39,6 @@ function! AliBuildProject(cfg)
     let a:cfg.build_env= ""
   endif
   if a:cfg.project_name == g:alibuild_current_project
-    echom "Already in project ".a:cfg.project_name
     return
   endif
   let l:includes = []
